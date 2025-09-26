@@ -1,0 +1,82 @@
+/* ===== Estilos Minimalistas ===== */
+:root {
+  --bg: #f5f7fa;
+  --primary: #4a90e2;
+  --text: #2c3e50;
+  --muted: #7f8c8d;
+  --radius: 12px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+input {
+  padding: 0.8rem 1rem;
+  border: 1px solid #dfe6e9;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: var(--primary);
+}
+
+button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--primary);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #357ab8;
+  transform: translateY(-2px);
+}
+
+#saludo {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--muted);
+}
+
+a {
+  margin-top: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #357ab8;
+}
+
+

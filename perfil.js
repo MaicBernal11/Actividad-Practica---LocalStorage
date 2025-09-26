@@ -1,9 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-
     const userSave = localStorage.getItem("usuario");
-    userCreated.textContent = "Bienvenido De Nuevo " + userSave;
 
+    if (userSave) {
+        userCreated.textContent = "Bienvenido De Nuevo " + userSave;
+    }
+    else{
+        userCreated.textContent = "Usuario Indefinido";
+    }
 
 });
 
